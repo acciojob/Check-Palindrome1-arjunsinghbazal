@@ -10,7 +10,6 @@ while(i<n/2){
 	}
 	i++;
 	j--;
-	
 }
 	return true;
 }
