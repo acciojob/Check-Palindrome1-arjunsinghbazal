@@ -3,7 +3,7 @@
 function palindrome(str){
 let n=str.length;
 let i=0;
-let j=n-1;
+let j=n;
 while(i<=n/2){
 	if(str[i]!=str[j]){
 		return false;
