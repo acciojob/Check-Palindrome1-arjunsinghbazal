@@ -4,7 +4,7 @@ function palindrome(str){
 let str2;
 let n=str.length;
 for(let k=0;k<n;k++){
-	if((str[i]!=" ")&&(str[i]>='a'&&str[i]<='z')){
+	if((str[i]!=" ")&&(str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z')){
 		str2.push(str[i]);
 	}
 }
