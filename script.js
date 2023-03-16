@@ -1,24 +1,17 @@
 // complete the given function
-
-function palindrome(str){
-let str2;
-let n=str.length;
-for(let k=0;k<n;k++){
-	if((str[i]!=" ")&&(str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z')){
-		str2.push(str[i]);
+function palindrome(str1){
+let startIndex= 0;
+let str = str1.toLowerCase();
+let endIndex = str.length-1;
+	while(startIndex < endIndex){
+		if(str[startIndex] != str[endIndex]){
+			return false;
+		}
+		startIndex++;
+		endIndex--;
 	}
-}
-let str1=str2.toLowerCase();
-let i=0;
-let j=n-1;
-while(i<n/2){
-	
-	if(str1[i]!=str1[j]){
-		return false;
-	}
-	i++;
-	j--;
-}
 	return true;
+}
+module.exports = palindrome
 }
 module.exports = palindrome
