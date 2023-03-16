@@ -13,5 +13,4 @@ let endIndex = str.length-1;
 	return true;
 }
 module.exports = palindrome
-}
-module.exports = palindrome
+
